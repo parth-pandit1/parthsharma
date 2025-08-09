@@ -145,6 +145,13 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #000428;
 }
+nav ul li {
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
 
 /* Hero */
 .hero img {
@@ -457,4 +464,17 @@ footer {
 @media (max-width: 768px) {
   .school-title h1 { font-size: 1.5rem; }
   nav ul { flex-direction: column; align-items: center; }
+}
+.top-info {
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-left, .logo-right {
+  margin: 5px 0;
+}
+
+.school-title h1 {
+  font-size: 1.4rem;
+  text-align: center;
 }
