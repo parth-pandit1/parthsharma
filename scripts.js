@@ -1,4 +1,4 @@
- 
+   
   window.addEventListener("load", function () {
     const overlay = document.getElementById("welcome-overlay");
 
@@ -57,6 +57,18 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Error!", error.message);
       });
   });
+  // ===== Mobile Menu Toggle =====
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navbar = document.querySelector(".navbar");
+
+  if (hamburger && navbar) {
+    hamburger.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  }
+});
+
  
   function flipCard(card) {
     card.classList.toggle('flipped');
